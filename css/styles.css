@@ -5,7 +5,6 @@ body {
   background-color: #ffffff;
 }
 
-/* Скидання маржинів для чистої типографіки */
 h1,
 h2,
 h3,
@@ -23,7 +22,11 @@ a {
   text-decoration: none;
 }
 
-/* --- ЛОГОТИП (B10) --- */
+img {
+  display: block;
+}
+
+/* --- ЛОГОТИП --- */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -51,13 +54,12 @@ a {
 }
 
 .contacts-link {
-  font-style: normal; /* Щоб address не був курсивом */
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-/* Стани (C3, C4) — це дозволено */
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
@@ -75,6 +77,8 @@ a {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
+  /* Виправлення: вирівнювання заголовка по центру */
+  text-align: center;
 }
 
 .hero-button {
@@ -92,15 +96,22 @@ a {
   background-color: #404bbf;
 }
 
-/* --- СЕКЦІЇ ТА ЗАГОЛОВКИ (H2) --- */
-.features-title,
+/* --- СЕКЦІЙНІ ЗАГОЛОВКИ (H2) --- */
+.features-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
 .team-title,
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* Не центруємо через Flexbox, залишаємо як є */
+  /* Виправлення: центрування заголовків Team та Portfolio */
+  text-align: center;
 }
 
 /* --- ПІДЗАГОЛОВКИ (H3) --- */
@@ -125,6 +136,24 @@ a {
   color: #434455;
 }
 
+/* --- TEAM SECTION --- */
+.team {
+  background-color: #f4f4fd;
+}
+
+/* Виправлення: білий фон для кожного учасника команди */
+.team-item {
+  background-color: #ffffff;
+}
+
+/* Центрування тексту всередині карток команди */
+.team-card-content {
+  text-align: center;
+}
+
+/* --- PORTFOLIO SECTION --- */
+/* Тут заголовок вже відцентрований через .portfolio-title вище */
+
 /* --- FOOTER --- */
 .page-footer {
   background-color: #2e2f42;
@@ -132,9 +161,4 @@ a {
 
 .footer-text {
   color: #f4f4fd;
-}
-
-/* --- TEAM SECTION BACKGROUND --- */
-.team {
-  background-color: #f4f4fd;
 }
